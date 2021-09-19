@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Planetgram</title>
+    <script type="text/javascript" src="../javascript/jquery-3.5.1.js"></script>
+    <script src="https://kit.fontawesome.com/f34ccd92c8.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" href="../css/NASA.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <!-- NAV -->
+    <nav id="nav_bar">
+        <h1>Planetgram</h1>
+        <ul>
+            <li><a href="#">  HOME</a></li>
+            <li><a href="#"> ABOUT</a></li>
+            <li><a href="#">  Animation</a></li>
+            <li><a href="#">  </a> </li>
+        </ul>
+    </nav>
+
+    <!-- Section that holds cards-->
+    <section class="cards">
+            <!-- Component Display -->
+        <article class="card">
+            <!-- Title -->
+            <h3>Today's Planetgram</h3>
+            <!-- Span to hold photo -->
+            <span id="image"></span>
+            <!-- Info of picture -->
+            <div>
+                <h4 id="title"></h4>
+                <p id="date"></p>
+                <p id="description"></p>
+            </div>
+            <!-- button: Like -->
+            <button type="button" class="like"><i class="far fa-heart"></i></button>
+        </article>
+
+        <!-- Component Display by date -->
+        <article class="card" id="cardDate">
+            <!-- Title -->
+            <h3>Search by Date</h3>
+            <!-- Span For Image -->
+            <span id="imageDate"></span>
+            <!-- Info of picture -->
+            <div>
+                <h4 id="titleDate"></h4>
+                <p id="dateDate"></p>
+                <p id="descriptionDate"></p>
+            </div>
+            <!-- error msg -->
+            <span id="errMsg"></span>
+            <!-- Form for date -->
+            <form action="#" method="post" id="checkDate" name="checkDate">
+                <label for="searchDate" class="searchDate">Get Image by Date: </label><br />
+                <input id="searchDate" type="date" Placeholder="yyyy-mm-dd"></input> <br />
+            </form>
+            
+            <button type="button" id="getDateValue" class="viewPic"><i class="fas fa-search"></i></button>
+            <button type="button" class="like"><i class="far fa-heart"></i></button>
+        </article>
+    </section>
+
+    <script async defer type="text/javascript" src="../js/NASA.js" charset="utf-8"></script>
+</body>
+
+</html>
